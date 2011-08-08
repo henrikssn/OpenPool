@@ -1,0 +1,224 @@
+body, html {
+	background: #f8f8f8;
+	font-family: 'PT Serif', arial, serif; 
+	font-size: 14px;
+}
+
+p, h1, h2, h3, h4, form, button{border:0; margin:0; padding:0;}
+
+#container {
+    width: 950px;
+    margin: 0px auto 20px;
+}
+
+#header {
+    font-size: 12px;
+}
+
+#header #logo {
+    width: 300px;
+}
+
+#header h1 {
+    font-size: 60px;
+    color: #000;
+    text-decoration: none;
+    margin: 0px;
+}
+
+#header .slogan {
+    position: relative;
+    margin: -10px 0px 0px 130px;
+    text-transform: uppercase;
+    width: 200px
+}
+
+#header hr {
+	height: 1px;
+	border: none;
+	color: #555;
+	//background-color: #555;
+}
+
+#header #menu {
+    text-transform: uppercase;
+    margin-top: -15px;
+    margin-left: 300px;
+    float: left;
+}
+
+#header #menu li {
+    display: block;
+	float: left;
+	font-size: 14px;
+	margin-left: 30px;
+    color: #555;
+}
+#header #menu li a {
+    color: #FF0066;
+    text-decoration: none;
+}
+
+#header #menu li a:hover {
+	text-decoration: underline;
+}
+
+#content {
+    margin-top: 10px;
+}
+
+#content #right h2 {
+    text-transform: uppercase;
+    color: #FF0066;
+    font-size: 16px;
+}
+
+#content #right #stats {
+    font-size: 12px;
+}
+
+#content #right #stats h2 {
+    margin: 0px auto -5px;
+}
+
+#content #right #news {
+    position: relative;
+    margin-top: 70px;
+}
+
+#content #right #news h2 {
+    margin: 0px auto -5px;
+}
+
+#content #right #news h3 {
+    margin: 0px auto 0px;
+}
+
+#content #right #news p {
+    margin: 0px auto 0px;
+}
+
+
+#content #right hr {
+    height: 1px;
+	border: 0;
+	background-color: #999;
+}
+
+#content #right {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 10px;
+    float: right;
+    width: 35%;
+}
+
+#content #right ul {
+    text-transform: uppercase;
+    font-size: 12px;
+    list-style-type: none;
+} 
+
+
+#content #left {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 10px 20px 40px 20px;
+    width: 57%;
+    float: left;
+}
+
+#content #left p {
+    margin-bottom: 15px;
+}
+
+#content #left h2 {
+    margin: 0px auto 0px;
+}
+
+#signup label {
+    display: block;
+    text-align: right;
+    float: left;
+    width: 140px;
+}
+
+#signup .small {
+    font-size: 11px;
+    display: block;
+    text-align: right;
+    float: left;
+    width: 140px;
+}
+
+#signup input{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:200px;
+margin:2px 0 20px 10px;
+}
+
+#signup button{
+clear:both;
+margin-left:150px;
+width:125px;
+height:31px;
+background:#666666;
+text-align:center;
+line-height:31px;
+color:#FFFFFF;
+font-size:11px;
+font-weight:bold;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+
+.form {
+    margin:0 auto;
+    width:400px;
+    padding:14px;
+}
+
+a {
+    text-decoration: none;
+    color: #F06;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+	float: left;
+}
+
+.narrow {
+    width: 80%;
+}
+
+.sign {
+    float: right;
+    color: #888;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.nostyle {
+    color: #000;
+    text-decoration: none;
+}
+
+.nostyle:hover {
+    text-decoration: none;
+}
