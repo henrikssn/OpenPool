@@ -15,8 +15,9 @@
 #    along with OpenPool.  If not, see <http://www.gnu.org/licenses/agpl-3.0.html>.
 ?>
 <?php
-    if(isset($_POST["username"]) && isset($_POST["password"])) {
-        if (!new_user($_POST["username"], $_POST["password"])) {
+	require($_SERVER['DOCUMENT_ROOT']."script/db.php");	
+    if(isset($_POST["email"]) && isset($_POST["password"])) {
+        if (!new_user($_POST["email"], $_POST["password"])) {
             $error = "An error has occured, please try again.";
         } else {
             header("Location: /profile.php");

@@ -15,16 +15,17 @@
 #    along with OpenPool.  If not, see <http://www.gnu.org/licenses/agpl-3.0.html>.
 ?>
 <?php
-    require(SERVER_ROOT."/config/config.php");
-    require(SERVER_ROOT."/config/mysql.php");
-    require(SERVER_ROOT."/script/util.php");
+    require($_SERVER['DOCUMENT_ROOT']."config/config.php");
+    require($_SERVER['DOCUMENT_ROOT']."script/mysql.php");
+    require($_SERVER['DOCUMENT_ROOT']."script/util.php");
         
     function new_user($username, $password) {
         $username = mysql_real_escape_string($username);
         $password = mysql_real_escape_string($password);
         $salt = substr(hash('sha256', $username.microtime().rand(0,1000000)), 0, 10);
-        $password_hash = hash_pass($password.$salt.PASSWORD_SALT);
-        $query = "INSERT INTO users(username, password ,salt) VALUES ('$username', '$password_hash', '$salt')"
+        $hash_password = hash_pass($password.$salt.PASSWORD_SALT);
+        $query = "INSERT INTO users(username, hash_password ,salt) VALUES ('$username', '$hash_password', '$salt')";
+        $ret = true;
         mysql_query($query) or $ret = false;
         return $ret;
     }
@@ -75,7 +76,7 @@
       $salt = getSalt($id);
       $query = "SELECT AES_DECRYPT(enc_address, '$aes_password$salt') AS address FROM users WHERE id = $id";
       $result = mysql_query($query) or die(mysql_error());
-      return mysql_result($result,0,"address")
+      return mysql_result($result,0,"address");      
     }
 
     function set_address($id,$address) {

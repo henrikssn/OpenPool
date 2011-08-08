@@ -17,12 +17,12 @@
 
 # SITE
 define("SITE_NAME",     "OpenPool");
-define("SERVER_ROOT",   "/var/www/");
+define("SERVER_ROOT",   "/var/www");
 
 # SALTS
 define("BALANCE_SALT",  "");
 define("API_SALT",      "");
-define("PASSWORD_SALT"  "");
+define("PASSWORD_SALT",  "");
 
 # GLOBAL ENCRYPTION
 define("GLOBAL_SALT", "");

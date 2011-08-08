@@ -15,7 +15,7 @@
 #    along with OpenPool.  If not, see <http://www.gnu.org/licenses/agpl-3.0.html>.
 ?>
 <?php
-    function hash_password($password) {
+    function hash_pass($password) {
         for($i = 0; $i < 10000; $i++) {
             $password = hash('sha256', $password);
         }
