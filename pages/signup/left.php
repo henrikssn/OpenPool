@@ -39,6 +39,6 @@
         echo '<p>'.$error.'</p>';
     }
 ?>
-<p>Already a member? <a href="/signin">Sign In!</a></p>
+<p>Already a member? <a href="/signin.php">Sign In!</a></p>
 
 </div>
