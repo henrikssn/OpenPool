@@ -15,9 +15,9 @@
 #    along with OpenPool.  If not, see <http://www.gnu.org/licenses/agpl-3.0.html>.
 ?>
 <?php
-    require($_SERVER['DOCUMENT_ROOT']."config/config.php");
-    require($_SERVER['DOCUMENT_ROOT']."script/mysql.php");
-    require($_SERVER['DOCUMENT_ROOT']."script/util.php");
+    require($_SERVER['DOCUMENT_ROOT']."/config/config.php");
+    require($_SERVER['DOCUMENT_ROOT']."/script/mysql.php");
+    require($_SERVER['DOCUMENT_ROOT']."/script/util.php");
         
     function new_user($username, $password) {
         $username = mysql_real_escape_string($username);

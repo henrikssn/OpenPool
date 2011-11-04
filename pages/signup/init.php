@@ -15,7 +15,7 @@
 #    along with OpenPool.  If not, see <http://www.gnu.org/licenses/agpl-3.0.html>.
 ?>
 <?php
-	require($_SERVER['DOCUMENT_ROOT']."script/db.php");	
+	require($_SERVER['DOCUMENT_ROOT']."/script/db.php");	
     if(isset($_POST["email"]) && isset($_POST["password"])) {
         if (!new_user($_POST["email"], $_POST["password"])) {
             $error = "An error has occured, please try again.";

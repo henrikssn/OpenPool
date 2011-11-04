@@ -16,6 +16,6 @@
 ?>
 <?php
     require($_SERVER['DOCUMENT_ROOT']."/config/config.php");
-    mysql_connect('localhost',MYSQL_USER,MYSQL_PASS) or die("Unable to connect to mysql");
+    mysql_connect(MYSQL_HOST,MYSQL_USER,MYSQL_PASS) or die("Unable to connect to mysql");
     @mysql_select_db(MYSQL_DB) or die("Unable to select database");
 ?>

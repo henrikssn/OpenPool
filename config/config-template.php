@@ -32,6 +32,7 @@ define("AES_PASSWORD", "");
 define("MYSQL_USER", "");
 define("MYSQL_PASS", "");
 define("MYSQL_DB", "");
+define("MYSQL_HOST", "localhost");
 
 # BITCOIN
 define("BITCOIN_USER", "");
